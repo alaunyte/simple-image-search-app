@@ -19,10 +19,8 @@ const Gallery = () => {
                 } else {
                     window.confirm(`ohh.. sorry, we didn't found ${value}`)
                 } 
-                
             })
             setLoading(true)
-            
     }
 
     return (
@@ -53,12 +51,7 @@ const Gallery = () => {
                                 })
                             }
                         </div>  
-                    
-
                     }
-                    
-                
-                
             </div>
        </div>
     )
