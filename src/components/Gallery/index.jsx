@@ -25,10 +25,6 @@ const Gallery = () => {
             
     }
 
-    // <div className={styles.loaderContainer}>
-    //     <img src={loaderGif} alt="" clasName={styles.loader}/>
-    // </div>
-
     return (
        <div>
             <div className={`container ${styles.searchBarBoxShadow}`}>
