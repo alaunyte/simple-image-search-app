@@ -36,3 +36,19 @@
         width: 100%;
     }
 }
+.imagesPosition {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    @media screen and (max-width: $break-medium) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: $break-small) {
+        grid-template-columns: 1fr;
+    }
+}
+.images {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

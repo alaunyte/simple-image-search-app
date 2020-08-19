@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchBar from "./components/SearchBar/";
+import Gallery from "./components/Gallery/";
 
 const App = () => {
   return (
     <div>
-      <SearchBar/>
+      <Gallery/>
     </div>
   );
 }
