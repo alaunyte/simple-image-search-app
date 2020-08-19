@@ -1,0 +1,6 @@
+.container {
+    padding: 0 100px;
+    @media screen and (max-width: $break-small) {
+        padding: 0 50px;
+    }
+}
