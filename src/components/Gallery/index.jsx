@@ -6,21 +6,28 @@ import loaderGif from "../../img/loader.gif";
 const Gallery = () => {
     const [value, setValue] = useState("");
     const [results, setResults] = useState([]);
-    const [loaded, setIsLoaded] = useState(false);
-    
+    const [loading, setLoading] = useState(false);
+
     const fetchImages = () => {
         fetch(`https://api.unsplash.com/search/photos/?client_id=Ytv2tQ9muH96PcLfrpaCN3dMus95Z5vdFWmgKjdisqE&query=${value}`)
             .then(response => response.json())
             .then(data => {
+                setLoading(false);
                 if(data.results.length !== 0) {
+                    
                     setResults(data.results);
                 } else {
                     window.confirm(`ohh.. sorry, we didn't found ${value}`)
                 } 
-                setIsLoaded(true)
+                
             })
+            setLoading(true)
+            
     }
 
+    // <div className={styles.loaderContainer}>
+    //     <img src={loaderGif} alt="" clasName={styles.loader}/>
+    // </div>
 
     return (
        <div>
@@ -36,20 +43,26 @@ const Gallery = () => {
             </div>
             <div className="container">
                 <h1>Gallery</h1>
-                {
-                    !loaded ?
-                    <div className={styles.loaderContainer}>
-                        <img src={loaderGif} alt=""/>
-                    </div>
-                    :
-                    <div className={styles.imagesPosition}>
-                        {
-                            results.map((item) => {
-                                return <img key={item.id} src={item.urls.regular} alt="" className={styles.images} />
-                            })
-                        }
-                    </div>
-                }
+                    {
+                        loading?
+
+                        <div className={styles.loaderContainer}>
+                            <img src={loaderGif} alt="" className={styles.loader}/>
+                        </div>
+                        :
+                        <div className={styles.imagesPosition}>
+                            {
+                                results.map((item) => {
+                                    return <img key={item.id} src={item.urls.regular} alt="" className={styles.images} />
+                                })
+                            }
+                        </div>  
+                    
+
+                    }
+                    
+                
+                
             </div>
        </div>
     )
