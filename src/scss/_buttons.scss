@@ -16,3 +16,11 @@
 .btn--sm {
     padding: 5px;
 }
+.btn--blank {
+    color: $black;
+    background: none;
+    border: none;
+    &:hover {
+        background: none;
+    }
+}
