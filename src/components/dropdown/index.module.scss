@@ -1,0 +1,19 @@
+.dropdown{
+  position: relative
+}
+.body{
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 2;
+  padding: 0.25rem;
+  border: 1px solid black;
+}
+.show{
+  display: block;
+}
+.link{
+  padding: 10px;
+  cursor: pointer;
+  
+}

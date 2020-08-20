@@ -36,7 +36,20 @@ const Gallery = () => {
                 </div>
             </div>
             <div className="container">
-                <h1>Gallery</h1>
+                <div className={styles.imagesHeaderContainer}>
+                    <h1>Gallery</h1>
+                    <div className={styles.dropdown}>
+                        <button className="btn">Saved Queries</button>
+                        <div className={styles.dropdownContent}>
+                            <div>
+                                <span className={styles.listAlign}>
+                                    {value}
+                                    <button className="btn btn--sm">Delete</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     {
                         loading?
 

@@ -36,6 +36,37 @@
         width: 100%;
     }
 }
+.imagesHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    &:hover .dropdownContent {
+        display: block;
+    }
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background: $white;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid $muted;
+    border-radius: 5px;
+    z-index: 1;
+}
+.listAlign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid $lightgrey;
+}
 .loaderContainer {
     display: flex;
     justify-content: center;
