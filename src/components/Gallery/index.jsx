@@ -39,14 +39,14 @@ const Gallery = ({ queries, addQuery, deleteQuery }) => {
     return (
        <div>
             <div className={`container ${styles.searchBarBoxShadow}`}>
-                <div className={styles.container} onSubmit={handleSubmit}>
+                <form className={styles.container} onSubmit={handleSubmit}>
                     <span>FIND AMAZING IMAGE</span>
                         <div className={styles.searchGroup}>
                             <FaSearch/>
                             <input type="text" id={value} value={value} onChange={(e) => setValue(e.target.value)} placeholder="Search free images"/>
                         </div>
                         <button className="btn" type="submit" onClick={() => fetchImages()} >Search</button>
-                </div>
+                </form>
             </div>
             <div className="container">
                 <div className={styles.imagesHeaderContainer}>
@@ -65,7 +65,6 @@ const Gallery = ({ queries, addQuery, deleteQuery }) => {
                                             </span>
                                         </div>
                                     )
-                                    
                                 }
                             </div>
                             :
@@ -100,7 +99,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToPropos = dispatch => ({
-    addQuery: (newQueryData) => dispatch(addQuery(newQueryData)),
+    addQuery: (title) => dispatch(addQuery(title)),
     deleteQuery: (id) => dispatch(deleteQuery(id))
 })
 
