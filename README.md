@@ -1,4 +1,6 @@
 # React application for searching/displaying images from Unsplash
+This application is hosted at Github Pages https://alaunyte.github.io/simple-image-search-app/
+
 ![alt text](https://github.com/alaunyte/simple-image-search-app/blob/master/images/main.png?raw=true)
 
 Application is built with React. It utilises simple, comprehensive, responsive user interface.
