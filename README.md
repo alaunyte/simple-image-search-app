@@ -8,7 +8,7 @@ This application uses Unsplash.com api for image searching/fetching.
 
 More information on how to create developer account for Unsplash api could be found here: https://unsplash.com/developers
 
-###Features
+### Features
 - Keyword search input field
 - “Search” button to retrieve images
 - Image grid for displaying images
