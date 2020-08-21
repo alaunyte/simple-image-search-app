@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simple-image-search-app/static/css/main.d31aa71d.chunk.css",
+    "main.js": "/simple-image-search-app/static/js/main.8a7d4466.chunk.js",
+    "main.js.map": "/simple-image-search-app/static/js/main.8a7d4466.chunk.js.map",
+    "runtime-main.js": "/simple-image-search-app/static/js/runtime-main.4c5b4b44.js",
+    "runtime-main.js.map": "/simple-image-search-app/static/js/runtime-main.4c5b4b44.js.map",
+    "static/js/2.451714b1.chunk.js": "/simple-image-search-app/static/js/2.451714b1.chunk.js",
+    "static/js/2.451714b1.chunk.js.map": "/simple-image-search-app/static/js/2.451714b1.chunk.js.map",
+    "index.html": "/simple-image-search-app/index.html",
+    "precache-manifest.1a6baf84c08fae222e407fb03663450a.js": "/simple-image-search-app/precache-manifest.1a6baf84c08fae222e407fb03663450a.js",
+    "service-worker.js": "/simple-image-search-app/service-worker.js",
+    "static/css/main.d31aa71d.chunk.css.map": "/simple-image-search-app/static/css/main.d31aa71d.chunk.css.map",
+    "static/js/2.451714b1.chunk.js.LICENSE.txt": "/simple-image-search-app/static/js/2.451714b1.chunk.js.LICENSE.txt",
+    "static/media/loader.gif": "/simple-image-search-app/static/media/loader.aee4facb.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c5b4b44.js",
+    "static/js/2.451714b1.chunk.js",
+    "static/css/main.d31aa71d.chunk.css",
+    "static/js/main.8a7d4466.chunk.js"
+  ]
+}
